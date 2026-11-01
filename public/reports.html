@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reports – CashQuest</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪙</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-reports">
+  <div id="nav"></div>
+  <main class="page container">
+    <div class="page-head">
+      <div><h1>📊 Reports</h1><p>Understand your habits with charts and quick insights.</p></div>
+      <div style="min-width:200px"><label for="month" style="margin-top:0">Month</label><input type="month" id="month" /></div>
+    </div>
+
+    <section class="grid g4" id="stats"></section>
+
+    <div class="grid g-main mt">
+      <section class="card"><h2>📈 Income vs spending <span class="sub">last 6 months</span></h2><div class="chart-box" style="height:400px"><canvas id="trend"></canvas></div></section>
+      <section class="card">
+        <h2>🍩 By category</h2>
+        <div class="chart-box" style="height:210px"><canvas id="donut"></canvas></div>
+        <div class="legend-list" id="legend"></div>
+        <p class="empty hidden" id="donutEmpty"><span class="big">🧾</span>No spending this month.</p>
+      </section>
+    </div>
+
+    <div class="grid g-main mt">
+      <section class="card"><h2>📅 Daily spending <span class="sub" id="dailyLabel"></span></h2><div class="chart-box"><canvas id="daily"></canvas></div></section>
+      <section class="card"><h2>💡 Insights</h2><ul class="insights" id="insights"></ul></section>
+    </div>
+  </main>
+  <div id="toasts"></div>
+
+  <script src="js/vendor/chart.umd.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/reports.js"></script>
+</body>
+</html>
