@@ -64,7 +64,7 @@ const DEL = url => api('DELETE', url);
     box.style.cssText = 'position:fixed;inset:0;z-index:9999;display:grid;place-items:center;padding:20px;background:rgba(5,6,20,.96);color:#eef1ff;font-family:system-ui,Segoe UI,sans-serif;overflow:auto';
     box.innerHTML = `
       <div style="max-width:560px;background:#12163a;border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:28px">
-        <h2 style="margin:0 0 10px;font-size:1.4rem">⚠️ Start the CashQuest server first</h2>
+                <h2 style="margin:0 0 10px;font-size:1.4rem">⚠️ Start the LakshQuest server first</h2>
         <p style="color:#c3cbf2;line-height:1.6">This page needs its back-end (Node.js + database) to work. It cannot be opened by double-clicking the file or with Live Server.</p>
         <ol style="color:#eef1ff;line-height:1.9;margin:14px 0 14px 20px">
           <li>In VS Code open the <b>cashquest</b> folder, then open the terminal (<b>Ctrl + \`</b>)</li>
@@ -113,7 +113,7 @@ const NAV = [
 ];
 
 function logoHTML() {
-  return '<a class="logo" href="/index.html"><span class="coin">₹</span><span class="logo-text">Laksh <span class="grad-text">Quest</span></span></a>';
+  return '<a class="logo" href="/index.html"><span class="coin">₹</span><span class="logo-text">Laksh<span class="grad-text">Quest</span></span></a>';
 }
 function bindMenu() {
   const nav = $('.nav');
