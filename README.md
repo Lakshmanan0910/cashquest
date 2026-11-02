@@ -1,4 +1,4 @@
-# 🪙 CashQuest: Gamified Pocket Money & Savings Tracker
+# 🪙 Laksh Quest: Gamified Pocket Money & Savings Tracker
 
 A full-stack web project. Track pocket money and spending, set savings goals, earn **XP, levels, streaks and badges**, and take on **quests**.
 
@@ -25,7 +25,7 @@ A full-stack web project. Track pocket money and spending, set savings goals, ea
 4. Open **http://localhost:3000** in your browser.
 5. **Demo login:** `demo@cashquest.com` / `demo123` (or click *Use the demo account*). You can also create your own account.
 
-> ⚠️ **Always open the site at http://localhost:3000 after running `npm start`.** Do not double-click `index.html` and do not use Live Server. The pages need the Node server and database behind them. If you do, the page shows a "Start the CashQuest server first" message.
+> ⚠️ **Always open the site at http://localhost:3000 after running `npm start`.** Do not double-click `index.html` and do not use Live Server. The pages need the Node server and database behind them. If you do, the page shows a "Start the Laksh Quest server first" message.
 >
 > **Windows shortcut:** double-click **`start.bat`**. It installs, starts the server and opens the browser for you.
 

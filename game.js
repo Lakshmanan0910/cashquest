@@ -1,4 +1,4 @@
-// game.js - the "game engine" of CashQuest: XP, levels, badges, streaks and challenge progress.
+// game.js - the "game engine" of Laksh Quest: XP, levels, badges, streaks and challenge progress.
 //
 // XP is always CALCULATED from the user's real data (not just added up), so it can never be
 // farmed by adding and deleting entries. Rules:

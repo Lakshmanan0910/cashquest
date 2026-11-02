@@ -1,4 +1,4 @@
-// db.js - SQLite database setup for CashQuest
+// db.js - SQLite database setup for Laksh Quest
 // The whole database lives in one file: cashquest.db (created automatically).
 const Database = require('better-sqlite3');
 const path = require('path');

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard – Laksh Quest</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪙</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-dashboard">
+  <div id="nav"></div>
+  <main class="page container">
+    <div class="page-head">
+      <div><h1 id="hello">Dashboard</h1><p>Here is your money at a glance.</p></div>
+      <a class="btn btn-ghost" href="/transactions.html">View all transactions →</a>
+    </div>
+
+    <section class="card hero-level" id="levelCard"></section>
+
+    <section class="grid g4 mt" id="stats"></section>
+
+    <div class="grid g-main mt">
+      <div class="stack">
+        <section class="card" id="budgetCard"></section>
+        <div class="grid g2">
+          <section class="card">
+            <h2>🍩 Where it went <span class="sub">this month</span></h2>
+            <div class="chart-box"><canvas id="donut"></canvas></div>
+            <p class="empty hidden" id="donutEmpty"><span class="big">🧾</span>No spending yet this month.</p>
+          </section>
+          <section class="card">
+            <h2>🕒 Recent activity <a class="sub" href="/transactions.html">See all</a></h2>
+            <div class="list" id="recent"></div>
+          </section>
+        </div>
+      </div>
+      <div class="stack">
+        <section class="card">
+          <h2>⚡ Quick add</h2>
+          <div id="quickAdd"></div>
+        </section>
+        <section class="card">
+          <h2>🎯 Closest goals <a class="sub" href="/goals.html">See all</a></h2>
+          <div class="list" id="goals"></div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <div id="toasts"></div>
+
+  <script src="js/vendor/chart.umd.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

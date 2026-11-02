@@ -1,4 +1,4 @@
-// server.js - CashQuest back-end (Express + SQLite)
+// server.js - Laksh Quest back-end (Express + SQLite)
 // Run with:  npm start      then open  http://localhost:3000
 const express = require('express');
 const session = require('express-session');
@@ -50,6 +50,6 @@ app.listen(PORT, () => {
   const { db } = require('./db');
   console.log('\n  Database file: ' + db.name);
   console.log('  Accounts stored: ' + db.prepare('SELECT COUNT(*) c FROM users').get().c);
-  console.log('\n  CashQuest is running  ->  http://localhost:' + PORT);
+  console.log('\n  Laksh Quest is running  ->  http://localhost:' + PORT);
   console.log('  Demo login: demo@cashquest.com / demo123\n');
 });
